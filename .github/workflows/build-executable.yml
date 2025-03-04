@@ -28,7 +28,7 @@ jobs:
         run: pyinstaller --onefilegofile-downloader.py # 将 your_script.py 替换为你的主脚本名称
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact
         with:
           name: executable
           path: dist/gofile-downloader # 将 your_script 替换为你的主脚本名称
